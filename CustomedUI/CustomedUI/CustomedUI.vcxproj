@@ -393,12 +393,6 @@
     <ClCompile Include="src\XColorStatic.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="CustomedUI64U.def" />
-    <None Include="CustomedUI64UD.def" />
-    <None Include="CustomedUIU.def" />
-    <None Include="CustomedUIUD.def" />
-  </ItemGroup>
-  <ItemGroup>
     <ResourceCompile Include="CustomedUI.rc" />
   </ItemGroup>
   <ItemGroup>

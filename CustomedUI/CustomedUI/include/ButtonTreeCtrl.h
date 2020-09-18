@@ -12,6 +12,18 @@ public:
 	HTREEITEM GetNextItemEx(HTREEITEM hItem);
 	void ResetPrevMouseoverInfo();
 
+	// 파라미터 dwData와 일치하는 itemdata 를 갖는 트리아이템 찾기. 트리, 기준노드, 찾는아이템 [9/15/2020 Kwang]
+	HTREEITEM FindTreeData(HTREEITEM hItem, DWORD dwData);
+	// 파라미터 text와 일치하는 node name을 갖는 HTREEITEM찾기. 트리, 기준노드, 찾는아이템 [9/15/2020 Kwang]
+	HTREEITEM FindTreeText(HTREEITEM hItem, CString text, UINT uFlag = 0);
+
+	// 현재 트리의 아이템 데이터 이동
+	HTREEITEM MoveTreeItem(HTREEITEM hSrcItem, HTREEITEM hDestItem);
+	// 현재 트리의 모든 아이템 데이터 이동
+	BOOL MoveChildTreeItem(HTREEITEM hChildItem, HTREEITEM hDestItem);
+
+	// 최상위 노드 아이템데이터 찾기 [9/16/2020 Kwang]
+	DWORD_PTR GetTopParentItemData(HTREEITEM hSrcItem);
 protected:
 	DECLARE_MESSAGE_MAP()
 	
