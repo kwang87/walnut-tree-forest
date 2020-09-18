@@ -24,6 +24,9 @@ public:
 
 	// 최상위 노드 아이템데이터 찾기 [9/16/2020 Kwang]
 	DWORD_PTR GetTopParentItemData(HTREEITEM hSrcItem);
+
+	// 모든 노드 펼침 [9/18/2020 Kwang]
+	void ExpandAllGroupTree();
 protected:
 	DECLARE_MESSAGE_MAP()
 	

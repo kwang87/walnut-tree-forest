@@ -302,3 +302,13 @@ DWORD_PTR CButtonTreeCtrl::GetTopParentItemData(HTREEITEM hSrcItem)
 
 	return dwData;
 }
+void CButtonTreeCtrl::ExpandAllGroupTree()
+{
+	HTREEITEM hItem;
+	hItem = GetRootItem();
+	while (hItem != nullptr)
+	{
+		Expand(hItem, TVE_EXPAND);
+		hItem = GetNextItem(hItem, TVGN_NEXTVISIBLE);
+	}
+}
