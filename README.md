@@ -1,4 +1,4 @@
-# walnut-tree-forest
+# CustomedUI for MFC
 personal repository. my first github.
 
 CustomedUI lib.
